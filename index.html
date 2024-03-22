@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-gradient-to-t from-[#F0F8FF] to-[#6495ED] h-fit">
+
+  <header class="bg-white" id="top">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+      <div>
+        <img class="w-20" src="assets/img/whale.png" alt="whale logo">
+      </div>
+      <div
+        class="nav-links duration-500 md:static md:min-h-fit md:w-auto absolute bg-white min-h-[60vh] left-0 top-[-100%] w-full flex items-center px-5 ">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+          <li>
+            <a class="hover:text-gray-500" href="#facts">
+              Facts
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#species">
+              Species
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#threats">
+              Threats
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#help">
+              How To Help
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#" target="_blank"
+          class="bg-[#6495ED] text-white px-5 py-2 rounded-full hover:bg-[#3271e7]">
+          Donate
+        </a>
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-10">
+    <section>
+      <h2 id="facts" class="text-2xl font-bold text-center pt-10"> What Is A Whale? </h2>
+      <p class="text-gray-950 font-light py-5">
+        Whales are marine mammals belonging to the group Cetacea, which also includes dolphins and porpoises. Whales are
+        known for their large size, with many whale species weighing several tonnes.
+      </p>
+
+      <p class="text-gray-950 font-light py-5">
+        Although descended from land animals, whales are fully adapted to aquatic life, possessing streamlined bodies
+        for
+        efficient swimming, flippers for maneuvering, and a paddle-like tail, known as a fluke, for propulsion.
+      </p>
+
+      <p class="text-gray-950 font-light py-5">
+        Despite living in the ocean, whales are air-breathing animals and therefore have to surface periodically in
+        order
+        to breathe via a blowhole on top of their heads.
+      </p>
+
+      <p class="text-gray-950 font-light py-5">
+        Whales are intelligent animals, known for their complex social structures and communication systems, including
+        the
+        distinctive sound of whale song.
+      </p>
+
+      <h3 class="text-xl font-semibold pt-10">Two Main Types Of Whales</h3>
+
+      <p class="text-gray-950 font-light py-5">
+        There are two main types of whales: baleen whales of suborder Mysticeti, and toothed whales of suborder
+        Odontoceti.
+        Baleen whales are filter feeders that consume vast amounts of small prey such as krill and bait fish. Toothed
+        whales
+        typically hunt larger prey such as fish, squid and even other marine mammals, using echolocation.
+      </p>
+      <p class="text-gray-950 font-light py-5">
+        Examples of baleen whales include the blue whale, fin whale, humpback whale and the right whales; examples of
+        toothed whales include the sperm whale, beluga whale, the bottlenose whales, the beaked whales, and all dolphins
+        (including the killer whale / orca).
+      </p>
+      <figure>
+        <img src="assets/img/Blue-Whale-Swimming.jpeg" alt="Blue Whale Swimming" class="mx-auto">
+        <figcaption class="text-center text-sm text-neutral-600 dark:text-neutral-400">The blue whale, a baleen whale,
+          is
+          the world's largest animal.</figcaption>
+      </figure>
+      <p class="text-gray-950 font-light py-5">
+        The list of whale species below contains information on every recognized whale species (currently, 43 species in
+        total). In compiling this list, we consulted both the Catalogue of Life and the Mammal Species of the World
+        databases. The conservation status of each species comes from the IUCN Red List, and is correct at the time of
+        publishing.
+      </p>
+    </section>
+
+
+    <section>
+      <h2 id="species" class="text-2xl font-bold text-center py-10">Whale Species List</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 m-auto">
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Antarctic-Minke-Whale.jpeg" alt="Antarctic-Minke-Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Antarctic Minke Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Balaenoptera bonaerensis</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Balaenopteridae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Mysticeti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-red-400">Near
+                Threatened</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Antarctic and sub-Antarctic waters</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 7.5-10.7m / 24.6-35ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 5-10 tons (5000-9000 kg) / 11023-19842lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/arnouxs-beaked-whale.webp" alt="Arnoux's Beaked Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Arnoux's Beaked Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Berardius arnuxii</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Ziphiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Southern Ocean</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 9-12m / 29.5-39.4ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 9,000-12,000 kg / 19,842-26,455lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Bairds-Beaked-Whale.jpeg" alt="Bairds-Beaked-Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Baird's Beaked Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Berardius bairdii</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Ziphiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: North Pacific Ocean</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 10-13m / 32.8-42.7ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 10,000-12,000kg / 22,046-26,455lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Beluga-Whale.jpeg" alt="Beluga Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Beluga Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Delphinapterus leucas</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Monodontidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Arctic and Subarctic regions</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 4-5.5m / 13-18ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 1,100-1,600kg / 2,425-3,527lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Blainvilles-Beaked-Whale.jpeg" alt="Blainville's Beaked Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Blainville's Beaked Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Mesoplodon densirostris</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Ziphiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Warm temperate and tropical seas worldwide</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 4.4-4.8m / 14.4-15.7ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 930-1,000kg / 2050-2,205lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Blue-Whale.jpeg" alt="Blue Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Blue Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Balaenoptera musculus</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Balaenopteridae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Mysticeti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span
+                class="text-red-950">Endangered</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: All oceans except the Arctic</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 25-30m / 82-98.4ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 100,000-199,000kg / 220,462-438,719lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Bowhead-Whales.jpeg" alt="Bowhead Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Bowhead Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Balaena mysticetus</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Balaenidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Mysticeti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Arctic and subarctic waters</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 14-18m / 45.9-59.1ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 75,000-100,000kg / 165,346-220,462lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Brydes-Whale.jpeg" alt="Bryde's Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Bryde's Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Balaenoptera edeni</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Balaenopteridae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Mysticeti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Warm temperate and tropical seas worldwide</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 12-15m / 39.4-49.2ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 12,000-23,500kg / 26,455-51,809lb</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Minke-Whale.jpeg" alt="Common Minke Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Common Minke Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Balaenoptera acutorostrata</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Balaenopteridae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Mysticeti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Mainly in the North Atlantic and North Pacific
+            </p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 7-10m / 23-32.8ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 5,000-10,000kg / 11,023-22,046lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Cuvier's_Beaked_Whale.jpeg" alt="Cuvier's Beaked Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Cuvier's Beaked Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Ziphius cavirostris</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Ziphiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Distributed worldwide in deep offshore waters
+            </p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 5-7m / 16.4-23ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 2000-3000kg / 4409-6614lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Deraniyagala's_Beaked_Whale.webp" alt="Deraniyagala's Beaked Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Deraniyagala's Beaked Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Mesoplodon hotaula</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Ziphiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Warm tropical waters of the western Indian
+              Ocean and central Pacific</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 4–5 m / 13–16 ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 1,600 - 2,000 kg / 3,527.4 – 4,409.2 lb</p>
+          </div>
+        </div>
+
+        <div class="bg-white border-blue-950 border-8 rounded-md">
+          <img src="assets/img/species/Dwarf-Sperm-Whale.jpeg" alt="Dwarf Sperm Whale"
+            class="w-full h-48 sm:h-56 object-cover transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
+
+          <div class="px-2 mb-2 text-center">
+            <h3 class="text-xl font-semibold py-4">Dwarf Sperm Whale</h3>
+            <p class="text-gray-950 font-light text-sm py-5">Scientific name: Kogia sima</p>
+            <p class="text-gray-950 font-light text-sm py-2">Family: Kogiidae</p>
+            <p class="text-gray-950 font-light text-sm py-2">Suborder: Odontoceti</p>
+            <p class="text-gray-950 font-light text-sm py-2">Conservation status: <span class="text-green-400">Least
+                Concern</span></p>
+            <p class="text-gray-950 font-light text-sm py-2">Where found: Worldwide in tropical and temperate seas</p>
+            <p class="text-gray-950 font-light text-sm py-2">Length: 2.7m / 8.9ft</p>
+            <p class="text-gray-950 font-light text-sm py-2">Weight: 136-272kg / 300-600lb</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+      <h2 id="threats" class="text-2xl font-bold text-center pt-10">Threats</h2>
+      <h3 class="text-xl font-semibold pt-10">Commercial Whaling</h3>
+      <p class="text-gray-950 font-light py-5">
+        Despite a moratorium on commercial whaling and a ban on international trade of whale products, three
+        countries—Iceland, Japan, and Norway—continue their commercial whale hunts. Over 1,000 whales a year are killed
+        for such commercial purposes. The blue whale, the largest animal ever known to have existed, was almost
+        exterminated in the 20th century due to commercial whaling.
+      </p>
+
+      <p class="text-gray-950 font-light py-5">
+        The United States and other International Whaling Commission (IWC) member countries have tried for years to
+        persuade Iceland, Japan, and Norway to end their whaling as it undermines the effectiveness of the commission's
+        commercial whaling ban. However, in 2019, Japan chose to walk away from the IWC and now conducts commercial
+        whaling in its own territorial waters, outside of any international controls.
+      </p>
+
+      <h3 class="text-xl font-semibold pt-10">Climate Change</h3>
+
+      <p class="text-gray-950 font-light py-5">
+        Warming oceans and loss of sea ice in the Arctic and Antarctic can affect the habitats and food of whales. Large
+        patches of tiny plants and animals that they feed on will likely move or change in abundance as climate change
+        alters seawater temperature, winds, and ocean currents. These changes can mean whales such as humpbacks and
+        blues may have to migrate much further to reach feeding grounds, leaving them with less time to forage for food.
+        The shift in food availability due to climate fluctuations has already hurt the reproductive rates of the
+        endangered North Atlantic right whale.
+      </p>
+
+      <h3 class="text-xl font-semibold pt-10">Industry</h3>
+
+      <p class="text-gray-950 font-light py-5">
+        Many of the world's busiest shipping and ferry lanes overlap directly with areas where whales feed, give birth,
+        nurse their young, or travel between feeding and breeding grounds. Collisions with ships, entanglement in
+        fishing gear (known as bycatch), and pollution injure and kill whales. In many countries, there's often a lack
+        of political will to prioritize and address these problems, and inaction is largely due to lack of awareness of
+        the scale of the problem and mitigation tools, particularly where bycatch is concerned.
+      </p>
+
+      <p class="text-gray-950 font-light py-5">
+        Shipping activity and oil and gas development cause noise that can disrupt whale communication or even damage
+        whales' hearing. Such disturbance can exclude whales from critical feeding and breeding grounds and disrupt
+        their migratory paths.
+      </p>
+    </section>
+
+    <section>
+      <h2 id="help" class="text-2xl font-bold text-center pt-10">How To Help</h2>
+      <h3 class="text-xl font-semibold pt-10">World Wild Life Organization</h3>
+      <p class="text-gray-950 font-light py-5">
+        WWF has been actively working to protect whales for 50 years. In 1984, we helped to convince the world to ban
+        commercial whaling. WWF and our partners want to reduce the number of whales lost each year by demonstrating to
+        shipping companies, fishing fleets, and governments that new tools and best practices can significantly reduce
+        whale deaths and injury. WWF documents and works to protect critical feeding and breeding areas and migration
+        routes of whales. We work to establish whale sanctuaries, help shift shipping lanes, and curtail seismic surveys
+        that disrupt feeding grounds. For example, WWF played a vital role in the creation of the Ross Sea Sanctuary in
+        the Southern Ocean. We strive to increase awareness of the need for whale conservation at national, regional,
+        and international levels. We also create opportunities for local communities to be involved with and profit from
+        whale conservation initiatives.
+      </p>
+
+      <h3 class="text-xl font-semibold pt-10">The Protecting Whales And Dolphins Initiative</h3>
+
+      <p class="text-gray-950 font-light py-5">
+        WWF is working on an exciting new initiative to promote the conservation of whales and dolphins around the
+        world. The Protecting Whales and Dolphins Initiative focuses on whales and dolphins in marine environments and
+        centers around three main pillars of activities: 1) improved monitoring and mitigation of bycatch in fishing
+        gear; 2) reduction of underwater noise and collision risks from shipping; and 3) improved protection of critical
+        cetacean habitats used for feeding, breeding, resting, or migration. We're collaborating with other
+        international organizations, providing evidence and tools for other conservation partners to tackle threats and
+        harmful practices, and advocacy that includes targeted awareness raising and communication campaigns with
+        governments and industries.
+      </p>
+
+      <h3 class="text-xl font-semibold pt-10">International Whaling Comission</h3>
+
+      <p class="text-gray-950 font-light py-5">
+        WWF lobbies to bring all whaling under the strict control of the International Whaling Commission (IWC). The IWC
+        is the body charged with regulating whaling and addressing the vast number of other threats to whales, dolphins,
+        and porpoises in our oceans such as shipping, climate change, and bycatch. WWF is working to make the IWC more
+        effective in reducing all threats to whales.
+      </p>
+
+      <h3 class="text-2xl font-bold text-center py-10">How You Can Help</h3>
+
+      <div class="grid md:grid-cols-2 gap-4 pb-5">
+        <a href="#" target=”_blank”>
+          <div class="bg-white border-blue-950 border-8 rounded-md flex px-2 min-h-72">
+            <div class="w-1/2">
+              <h4 class="text-xl font-bold pt-3 text-blue-600">Take Action</h4>
+              <p class="text-gray-950 font-light py-5">Join us to make change. Speak up for species and places through
+                WWF's Action Center</p>
+            </div>
+            <div class="w-1/2">
+              <img src="assets/img/join-whale.jpeg" alt="whale">
+            </div>
+          </div>
+        </a>
+
+        <a href="#" target=”_blank”>
+          <div class="bg-white border-blue-950 border-8 rounded-md flex px-2 min-h-72">
+            <div class="w-1/2">
+              <h4 class="text-xl font-bold pt-3 text-blue-600">Give To WWF</h4>
+              <p class="text-gray-950 font-light py-5">Make a gift to WWF's global conservation efforts and choose from
+                symbolic whale adoptions, apparel and more</p>
+            </div>
+            <div class="w-1/2">
+              <img src="assets/img/donate.jpeg" alt="whale">
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+    <a href="#top" class="hover:text-gray-500 text-gray-400">Back to Top &#8593;</a>
+
+  </main>
+  <footer>
+    <div class="container mx-auto px-10">
+      <p class="text-gray-500 font-light py-5 text-right"> © 2024 Copyright: Kateryna Rybiy </p>
+    </div>
+  </footer>
+
+  <script>
+    function onToggleMenu(e) {
+      const navLinks = document.querySelector('.nav-links')
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+    }
+  </script>
+</body>
+
+</html>
